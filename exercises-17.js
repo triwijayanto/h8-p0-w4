@@ -21,6 +21,7 @@ function totalDigitRekursif(angka) {
     if(angkaString.length === 1){
       return Number(angkaDepan)
     } else {
+      //nilai else pasti hasil modifikasi dari parameter, agar bisa mendekatai BASECASE
       return Number(angkaDepan) + totalDigitRekursif(angkaSisa)
     }
   
